@@ -37,11 +37,11 @@ Output type is given after `->` sign.
 
 | to \ from     | Cell          | Vertex |
 |:------------- |:------------- |:-------|
-| **Cell**      |                                                    | `mesh.vertex_cells(vh) -> vertexCellIter pair`|
-| **Face**      | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | |
+| **Cell**      |                                                    | `mesh.vertex_cells(vh) -> VertexCellIter pair`|
+| **Face**      | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | `mesh.vertex_faces(vh) -> VertexFaceIter pair`|
 | **HalfFace**  |                                                    | |
 | **Edge**      |                                                    | |
-| **HalfEdge**  |                                                    | |
+| **HalfEdge**  |                                                    | `mesh.vertex_vertices(vh) -> VertexVertexIter pair`|
 | **Vertex**    | `mesh.cv_iter(ch) -> CellVertexIter` | |
 
 | to \ from     | Face  |  HalfFace |
