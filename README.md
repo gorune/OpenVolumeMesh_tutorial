@@ -37,7 +37,7 @@ Output type is given after `->` sign.
 
 | to \ from     | Cell          | Vertex |
 |:------------- |:------------- |:-------|
-| **Cell**      |                                                    | `mesh.vertex_cells(vh) -> VertexCellIter pair`|
+| **Cell**      |                                                    | `mesh.vertex_cells(vh) -> VertexCellIter pair` or `mesh.vc_iter(vh) -> VertexCellIter`|
 | **Face**      | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | `mesh.vertex_faces(vh) -> VertexFaceIter pair` or `mesh.vf_iter(vh) -> VertexFaceIter`|
 | **HalfFace**  |                                                    | |
 | **Edge**      |                                                    | |
