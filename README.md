@@ -41,8 +41,8 @@ Output type is given after `->` sign.
 | **Face**      | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | `mesh.vertex_faces(vh) -> VertexFaceIter pair` or `mesh.vf_iter(vh) -> VertexFaceIter`|
 | **HalfFace**  |                                                    | |
 | **Edge**      |                                                    | |
-| **HalfEdge**  |                                                    | `mesh.vertex_vertices(vh) -> VertexVertexIter pair`|
-| **Vertex**    | `mesh.cv_iter(ch) -> CellVertexIter` | |
+| **HalfEdge**  |                                                    | |
+| **Vertex**    | `mesh.cv_iter(ch) -> CellVertexIter` | `mesh.vertex_vertices(vh) -> VertexVertexIter pair`|
 
 | to \ from     | Face  |  HalfFace |
 |:------------- |:----- |:----------|
