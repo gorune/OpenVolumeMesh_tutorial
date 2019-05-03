@@ -46,11 +46,11 @@ Output type is given after `->` sign.
 
 | to \ from     | Face  |  HalfFace |
 |:------------- |:----- |:----------|
-| **Cell**      | | `mesh.incident_cell(HalfFaceHandle)` |
+| **Cell**      | | `mesh.incident_cell(hfh)` |
 | **Face**      | | `mesh.face_handle(hfh) -> FaceHandle` |
 | **HalfFace**  | | |
 | **Edge**      | | |
-| **HalfEdge**  | | `mesh.halfface(fh).halfedges() -> vec<HalfEdgeHandle>` |
+| **HalfEdge**  | `mesh.halfface(fh).halfedges() -> vec<HalfEdgeHandle>`| |
 | **Vertex**    | | `mesh.hfv_iter(hfh) -> HalfFaceVertexIter` |
 
 | to \ from     | Edge | HalfEdge |
