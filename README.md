@@ -57,7 +57,7 @@ Output type is given after `->` sign.
 |:------------- |:-----|:---------|
 | **Cell**      | | `mesh.halfedge_cells(heh) -> pair<HalfEdgeCellIter, HalfEdgeCellIter>` or `mesh.hec_iter(heh)` |
 | **Face**      | | |
-| **HalfFace**  | | `mesh.hehf_iter(heh) -> HalfEdgeHalfFaceIter`|
+| **HalfFace**  | | `mesh.hehf_iter(heh) -> HalfEdgeHalfFaceIter` or `mesh.halfedge_halffaces(heh) -> HalfEdgeHalfFaceIter pair`|
 | **Edge**      | | `mesh.edge_handle(heh)` |
 | **HalfEdge**  | `mesh.halfedge_handle(eh, 0)` or `mesh.halfedge_handle(eh, 1)` | |
 | **Vertex**    | | `mesh.halfedge(heh).from_vertex()` and `mesh.halfedge(heh).to_vertex()` |
