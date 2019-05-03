@@ -50,7 +50,7 @@ Output type is given after `->` sign.
 | **Face**      | | `mesh.face_handle(hfh) -> FaceHandle` |
 | **HalfFace**  | | |
 | **Edge**      | | |
-| **HalfEdge**  | `mesh.halfface(fh).halfedges() -> vec<HalfEdgeHandle>`| |
+| **HalfEdge**  | | `mesh.halfface(hfh).halfedges() -> vec<HalfEdgeHandle>`|
 | **Vertex**    | | `mesh.hfv_iter(hfh) -> HalfFaceVertexIter` |
 
 | to \ from     | Edge | HalfEdge |
