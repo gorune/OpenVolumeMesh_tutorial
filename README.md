@@ -1,4 +1,4 @@
-# OpenVolumeMesh_tutorial
+# OpenVolumeMesh Guide and Tutorial
 This tutorial covers some of the basic features of OpenVolumeMesh, also serves as a short reference to some of the volumetric mesh navigation functions.
 
 ## HalfEdge - HalfFace Data Structure
