@@ -73,11 +73,11 @@ Also note that when an object is deleted from the mesh (marked as deleted - befo
 ### Intra-Level
 Given a halfedge handle `heh`, the opposite halfedge can be obtained with
 
-`mesh.opposite_halfedge(heh) -> HalfEdgeHandle` (Documentation has some contradictory information here, it says the return type is an edge)
+`mesh.opposite_halfedge_handle(heh) -> HalfEdgeHandle`
 
 Given a halfface handle `hfh`, the opposite halfface can be obtained with
 
-`mesh.opposite_halfface(hfh) -> HalfFaceHandle` (Documentation has some contradictory information here, it says the return type is a face)
+`mesh.opposite_halfface_handle(hfh) -> HalfFaceHandle`
 
 ### Special Cases
 To get the geometry of a vertex:
