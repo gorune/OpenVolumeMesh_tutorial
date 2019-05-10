@@ -48,7 +48,7 @@ Output type is given after `->` sign.
 |:------------- |:----- |:----------|
 | **Cell**      | | `mesh.incident_cell(hfh)` |
 | **Face**      | | `mesh.face_handle(hfh) -> FaceHandle` |
-| **HalfFace**  | `mesh.halfface_handle(fh, 0) -> HalfFaceHandle` or `mesh.halfface_handle(fh, 1) -> HalfFaceHandle` | |
+| **HalfFace**  | `mesh.halfface_handle(fh, 0)` or `mesh.halfface_handle(fh, 1)` | |
 | **Edge**      | | |
 | **HalfEdge**  | | `mesh.halfface(hfh).halfedges() -> vec<HalfEdgeHandle>`|
 | **Vertex**    | | `mesh.hfv_iter(hfh) -> HalfFaceVertexIter` |
