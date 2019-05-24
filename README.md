@@ -60,7 +60,7 @@ Output type is given after `->` sign.
 | **HalfFace**  | | `mesh.hehf_iter(heh) -> HalfEdgeHalfFaceIter` or `mesh.halfedge_halffaces(heh) -> HalfEdgeHalfFaceIter pair`|
 | **Edge**      | | `mesh.edge_handle(heh)` |
 | **HalfEdge**  | `mesh.halfedge_handle(eh, 0)` or `mesh.halfedge_handle(eh, 1)` | |
-| **Vertex**    | | `mesh.halfedge(heh).from_vertex()` and `mesh.halfedge(heh).to_vertex()` |
+| **Vertex**    | `mesh.edge(eh).from_vertex()` and `mesh.edge(eh).to_vertex()` | `mesh.halfedge(heh).from_vertex()` and `mesh.halfedge(heh).to_vertex()` |
 
 Important Notes on deletion and deleted objects:
 
