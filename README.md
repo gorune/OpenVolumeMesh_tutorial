@@ -40,7 +40,7 @@ Output type is given after `->` sign.
 |:------------- |:------------- |:-------|
 | **Cell**      |                                                    | `mesh.vertex_cells(vh) -> VertexCellIter pair` or `mesh.vc_iter(vh) -> VertexCellIter`|
 | **Face**      |                                                    | `mesh.vertex_faces(vh) -> VertexFaceIter pair` or `mesh.vf_iter(vh) -> VertexFaceIter` 
-| **HalfFace**  | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | | |
+| **HalfFace**  | `mesh.cell(ch).halffaces() -> vec<HalfFaceHandle>` | | |
 | **Edge**      |                                                    | |
 | **HalfEdge**  |                                                    | `mesh.voh_iter(vh) -> VertexOHalfEdgeIter` |
 | **Vertex**    | `mesh.cv_iter(ch) -> CellVertexIter` | `mesh.vertex_vertices(vh) -> VertexVertexIter pair`|
