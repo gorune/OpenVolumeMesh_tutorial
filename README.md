@@ -29,6 +29,7 @@ First, some notation:
 - `vec`: `std::vector`
 - `Vec3d`: `OpenVolumeMesh::Geometry::VectorT<double,3>`
 - `PolyhedralMesh3d`: `OpenVolumeMesh::GeometryKernel<Vec3d>`
+- `VertexOHalfEdgeIter`: `OpenVolumeMesh::VertexOHalfEdgeIter>`
 
 ### Inter-Level
 Suppose `mesh` is a `PolyhedralMesh3d`, then topological queries can be done to go from an object to its incident objects in the mesh.
@@ -38,10 +39,10 @@ Output type is given after `->` sign.
 | to \ from     | Cell          | Vertex |
 |:------------- |:------------- |:-------|
 | **Cell**      |                                                    | `mesh.vertex_cells(vh) -> VertexCellIter pair` or `mesh.vc_iter(vh) -> VertexCellIter`|
-| **Face**      |                                                    |
-| **HalfFace**  | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | `mesh.vertex_faces(vh) -> VertexFaceIter pair` or `mesh.vf_iter(vh) -> VertexFaceIter` | |
+| **Face**      |                                                    | `mesh.vertex_faces(vh) -> VertexFaceIter pair` or `mesh.vf_iter(vh) -> VertexFaceIter` 
+| **HalfFace**  | `mesh.cell(ch).halfFaces() -> vec<HalfFaceHandle>` | | |
 | **Edge**      |                                                    | |
-| **HalfEdge**  |                                                    | |
+| **HalfEdge**  |                                                    | `mesh.voh_iter(vh) -> VertexOHalfEdgeIter` |
 | **Vertex**    | `mesh.cv_iter(ch) -> CellVertexIter` | `mesh.vertex_vertices(vh) -> VertexVertexIter pair`|
 
 | to \ from     | Face  |  HalfFace |
